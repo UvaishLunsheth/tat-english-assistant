@@ -1,0 +1,10 @@
+# Data Extraction & Processing
+pdf2image
+pytesseract
+pandas
+
+# App & Routing
+streamlit
+
+# Misc
+python-dotenv
