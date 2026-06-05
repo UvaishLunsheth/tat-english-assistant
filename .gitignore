@@ -1,0 +1,67 @@
+# ========================
+# Secrets & Environments
+# ========================
+.env
+.venv
+env/
+venv/
+tat-env/
+
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ========================
+# Jupyter Notebooks
+# ========================
+.ipynb_checkpoints
+
+# ========================
+# VS Code / IDEs
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ========================
+# OS Generated Files
+# ========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ========================
+# Project Specific
+# ========================
+*.log
+# Uncomment the line below if your textbook PDF is larger than 50MB
+# data/raw/
+# Uncomment the line below if you add a vector database later (like ChromaDB or FAISS)
+# chroma_db/
+# faiss_index/
