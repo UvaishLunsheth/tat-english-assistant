@@ -1,0 +1,58 @@
+# ========================
+# Secrets & API Keys
+# ========================
+.env
+# Streamlit secrets (if you use them later)
+.streamlit/secrets.toml
+
+# ========================
+# Virtual Environments
+# ========================
+.venv
+venv/
+env/
+tat-env/
+
+# ========================
+# Vector Databases & RAG Storage
+# ========================
+# It is critical to ignore local vector DBs as they get massive
+chroma_db/
+faiss_index/
+vectorstore/
+*.sqlite3
+*.db
+
+# ========================
+# Data & Documents
+# ========================
+# Uncomment these if you don't want to push the heavy/copyrighted PDFs to GitHub
+# data/*.pdf
+# data/raw/
+# data/processed/
+
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+
+# ========================
+# OS & IDEs
+# ========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# ========================
+# Logs & Caches
+# ========================
+*.log
+.langchain.cache/
