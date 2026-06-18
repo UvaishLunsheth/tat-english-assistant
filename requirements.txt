@@ -5,6 +5,7 @@ langchain-core
 langgraph
 
 chromadb
+langchain-chroma
 
 pypdf
 
@@ -16,4 +17,15 @@ pydantic
 
 google-generativeai
 
+
 langchain-google-genai
+langchain_openai
+
+pdf2image
+easyocr
+opencv-python
+pillow
+tqdm
+
+langchain-text-splitters
+
