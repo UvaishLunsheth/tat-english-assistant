@@ -13,6 +13,7 @@ from langchain_chroma import Chroma
 from langchain_google_genai import (
     GoogleGenerativeAIEmbeddings
 )
+from langchain_openai import OpenAIEmbeddings
 
 # ==================================================
 # PATHS
@@ -28,7 +29,7 @@ load_dotenv()
 INPUT_FILE = (
     PROJECT_ROOT
     / "data"
-    / "chunks_small.json"
+    / "all_chunks.json"
 )
 
 VECTOR_DB_DIR = (
@@ -59,15 +60,24 @@ print(
 documents = []
 
 for chunk in chunks:
-    
-    author_text = ""
-    if chunk.get("author"):
-        author_text = f"Author: {chunk['author']}\n"
 
-    documents.append(
-        Document(
-            page_content=f"""
-Unit {chunk['unit']}
+    source = chunk.get("source", "unknown")
+
+    # =====================================
+    # TEXTBOOK CHUNKS
+    # =====================================
+
+    if source == "textbook":
+
+        author_text = ""
+
+        if chunk.get("author"):
+            author_text = f"Author: {chunk['author']}\n"
+
+        page_content = f"""
+Source: Textbook
+
+Unit: {chunk['unit']}
 
 Title: {chunk['title']}
 
@@ -75,14 +85,49 @@ Title: {chunk['title']}
 Section: {chunk['section']}
 
 {chunk['text']}
-""",
-            metadata={
-                "unit": chunk["unit"],
-                "section": chunk["section"],
-                "title": chunk["title"],
-                "author": chunk.get("author"), 
-                "chunk_id": chunk["chunk_id"]
-            }
+"""
+
+        metadata = {
+            "source": source,
+            "unit": chunk["unit"],
+            "title": chunk["title"],
+            "section": chunk["section"],
+            "author": chunk.get("author"),
+            "chunk_id": chunk["chunk_id"]
+        }
+
+    # =====================================
+    # PEDAGOGY CHUNKS
+    # =====================================
+
+    else:
+
+        page_content = f"""
+Source: {source}
+
+Unit: {chunk['unit']}
+
+Topic Number: {chunk['topic_number']}
+
+Topic: {chunk['topic']}
+
+{chunk['text']}
+"""
+
+        metadata = {
+            "source": source,
+            "unit": chunk["unit"],
+            "topic_number": chunk["topic_number"],
+            "topic": chunk["topic"],
+            "page_start": chunk.get("page_start"),
+            "page_end": chunk.get("page_end"),
+            "chunk_id": chunk["chunk_id"]
+        }
+
+    documents.append(
+        Document(
+            page_content=page_content,
+            metadata=metadata
         )
     )
 
@@ -94,8 +139,8 @@ print(
 # EMBEDDINGS
 # ==================================================
 
-embeddings = GoogleGenerativeAIEmbeddings(
-    model="gemini-embedding-001"
+embeddings = OpenAIEmbeddings(
+    model="text-embedding-3-small"
 )
 
 # ==================================================
@@ -117,7 +162,7 @@ vectorstore = Chroma(
     embedding_function=embeddings
 )
 
-BATCH_SIZE = 5
+BATCH_SIZE = 100
 
 for i in range(0, len(documents), BATCH_SIZE):
 
@@ -142,15 +187,15 @@ for i in range(0, len(documents), BATCH_SIZE):
             if "RESOURCE_EXHAUSTED" in str(e):
 
                 print(
-                    "Rate limit hit. Waiting 60 seconds..."
+                    "Rate limit hit. Waiting 10 seconds..."
                 )
 
-                time.sleep(60)
+                time.sleep(10)
 
             else:
                 raise
 
-    time.sleep(5)
+    time.sleep(10)
 
 print()
 

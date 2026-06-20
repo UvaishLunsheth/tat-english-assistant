@@ -8,6 +8,7 @@ chromadb
 langchain-chroma
 
 pypdf
+pymupdf
 
 sentence-transformers
 
@@ -26,6 +27,7 @@ easyocr
 opencv-python
 pillow
 tqdm
+pytesseract
 
 langchain-text-splitters
 

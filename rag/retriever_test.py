@@ -1,79 +1,78 @@
 from pathlib import Path
 import sys
 
-from dotenv import load_dotenv
-
-from langchain_chroma import Chroma
-
-from langchain_google_genai import (
-    GoogleGenerativeAIEmbeddings
-)
-
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-load_dotenv()
+from rag.retriever import get_retriever
 
-VECTOR_DB_DIR = (
-    PROJECT_ROOT
-    / "vector_db"
-)
+retriever = get_retriever()
 
-embeddings = GoogleGenerativeAIEmbeddings(
-    model="gemini-embedding-001"
-)
+# ==================================================
+# QUERY
+# ==================================================
 
-vectorstore = Chroma(
+query = input("Question: ")
 
-    persist_directory=str(
-        VECTOR_DB_DIR
-    ),
+docs = retriever.invoke(query)
 
-    embedding_function=embeddings
-)
-
-retriever = vectorstore.as_retriever(
-
-    search_type="similarity",
-
-    search_kwargs={
-        "k": 5
-    }
-)
-
-query = "What is LOWESTEEM.EXE?"
-
-docs = retriever.invoke(
-    query
-)
+# ==================================================
+# RESULTS
+# ==================================================
 
 print()
-
-print(
-    "=" * 60
-)
-
-print(
-    f"QUESTION: {query}"
-)
-
-print(
-    "=" * 60
-)
+print("=" * 80)
+print("RETRIEVAL RESULTS")
+print("=" * 80)
 
 for i, doc in enumerate(docs, start=1):
 
+    metadata = doc.metadata
+
+    source = metadata.get(
+        "source",
+        "unknown"
+    )
+
+    
+
     print()
+    print(f"RESULT {i}")
+    print("-" * 60)
 
     print(
-        f"[RESULT {i}]"
+        f"Source : {source}"
     )
 
-    print(
-        doc.metadata
-    )
+    if source == "textbook":
+
+        print(
+            f"Unit   : {metadata.get('unit')}"
+        )
+
+        print(
+            f"Title  : {metadata.get('title')}"
+        )
+
+        print(
+            f"Section: {metadata.get('section')}"
+        )
+
+    else:
+
+        print(
+            f"Unit   : {metadata.get('unit')}"
+        )
+
+        print(
+            f"Topic  : {metadata.get('topic')}"
+        )
+
+        print(
+            f"Topic# : {metadata.get('topic_number')}"
+        )
 
     print()
 
