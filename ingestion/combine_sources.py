@@ -76,6 +76,23 @@ print(f"Pedagogy 1 chunks : {len(pedagogy_1)}")
 print(f"Pedagogy 2 chunks : {len(pedagogy_2)}")
 print(f"Combined chunks   : {len(combined)}")
 
-print(combined[0].keys())
-print(combined[600].keys())
-print(combined[1000].keys())
+print()
+print("=" * 60)
+print("METADATA CHECK")
+print("=" * 60)
+
+print()
+
+print("TEXTBOOK")
+print(textbook[0].keys())
+
+print()
+
+print("PEDAGOGY 1")
+print(pedagogy_1[0].keys())
+
+print()
+
+print("PEDAGOGY 2")
+print(pedagogy_2[0].keys())
+

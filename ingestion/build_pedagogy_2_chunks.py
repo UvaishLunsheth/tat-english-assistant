@@ -1,22 +1,33 @@
 import json
 from pathlib import Path
 
+# =====================================
+# PATHS
+# =====================================
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 INPUT_FILE = (
     PROJECT_ROOT
     / "data"
-    / "pedagogy_2_topics.json"
+    / "pedagogy_2_units.json"
 )
 
 OUTPUT_FILE = (
     PROJECT_ROOT
     / "data"
-    / "pedagogy_2_chunks.json"
+    / "pedagogy_2_chunks_small.json"
 )
 
 # =====================================
-# LOAD TOPICS
+# CHUNK SETTINGS
+# =====================================
+
+CHUNK_SIZE = 1000
+OVERLAP = 200
+
+# =====================================
+# LOAD UNITS
 # =====================================
 
 with open(
@@ -25,7 +36,7 @@ with open(
     encoding="utf-8"
 ) as f:
 
-    topics = json.load(f)
+    units = json.load(f)
 
 # =====================================
 # BUILD CHUNKS
@@ -33,34 +44,48 @@ with open(
 
 chunks = []
 
-for topic in topics:
+for unit in units:
 
-    try:
+    text = unit["text"]
 
-        unit_number = int(
-            topic["topic_number"].split(".")[0]
+    start = 0
+    chunk_id = 0
+
+    while start < len(text):
+
+        end = start + CHUNK_SIZE
+
+        chunk_text = text[start:end]
+
+        chunks.append({
+
+            "source": "pedagogy_2",
+
+            "block": unit["block"],
+
+            "unit": unit["unit"],
+
+            "global_unit": unit["global_unit"],
+
+            "title": unit["title"],
+
+            "page_start": unit["page_start"],
+
+            "page_end": unit["page_end"],
+
+            "chunk_id": chunk_id,
+
+            "char_count": len(chunk_text),
+
+            "text": chunk_text
+        })
+
+        chunk_id += 1
+
+        start += (
+            CHUNK_SIZE
+            - OVERLAP
         )
-
-    except Exception:
-
-        unit_number = None
-
-    chunks.append({
-
-        "source": "pedagogy_2",
-
-        "unit": unit_number,
-
-        "topic_number": topic["topic_number"],
-
-        "topic": topic["topic"],
-
-        "page_start": topic["page_start"],
-
-        "page_end": topic["page_end"],
-
-        "text": topic["text"]
-    })
 
 # =====================================
 # SAVE
@@ -79,8 +104,35 @@ with open(
         ensure_ascii=False
     )
 
+# =====================================
+# SUMMARY
+# =====================================
+
 print()
-print(f"Topics loaded : {len(topics)}")
-print(f"Chunks created: {len(chunks)}")
-print(chunks[20])
-print(f"Saved        : {OUTPUT_FILE}")
+print("=" * 60)
+
+print(
+    f"Units loaded : {len(units)}"
+)
+
+print(
+    f"Chunks created : {len(chunks)}"
+)
+
+print(
+    f"Saved : {OUTPUT_FILE}"
+)
+
+print("=" * 60)
+
+print()
+print("FIRST CHUNK")
+print(chunks[0].keys())
+
+print()
+print(chunks[0]["title"])
+
+print()
+print(chunks[0]["char_count"])
+
+print(chunks[0].keys())

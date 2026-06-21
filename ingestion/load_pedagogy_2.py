@@ -1,12 +1,15 @@
 import json
-import fitz
-import pytesseract
 from pathlib import Path
-from PIL import Image
+
+from pypdf import PdfReader
+
+# ==================================================
+# PATHS
+# ==================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-PDF_PATH = (
+INPUT_FILE = (
     PROJECT_ROOT
     / "data"
     / "references"
@@ -20,33 +23,30 @@ OUTPUT_FILE = (
     / "pedagogy_2_raw_pages.json"
 )
 
-pdf = fitz.open(PDF_PATH)
+# ==================================================
+# LOAD PDF
+# ==================================================
+
+reader = PdfReader(INPUT_FILE)
+
+print(
+    f"Pages found : {len(reader.pages)}"
+)
+
+# ==================================================
+# EXTRACT PAGES
+# ==================================================
 
 pages = []
 
-for i in range(len(pdf)):
+for i, page in enumerate(reader.pages):
 
-    page = pdf[i]
+    text = page.extract_text()
 
-    pix = page.get_pixmap(
-        matrix=fitz.Matrix(4, 4)
-    )
+    if text is None:
+        text = ""
 
-    img = Image.fromarray(
-        __import__("numpy").frombuffer(
-            pix.samples,
-            dtype="uint8"
-        ).reshape(
-            pix.height,
-            pix.width,
-            pix.n
-        )
-    )
-
-    text = pytesseract.image_to_string(
-    img,
-    lang="eng"
-)
+    text = text.strip()
 
     pages.append(
         {
@@ -55,9 +55,9 @@ for i in range(len(pdf)):
         }
     )
 
-    print(
-        f"Done page {i+1}/{len(pdf)}"
-    )
+# ==================================================
+# SAVE
+# ==================================================
 
 with open(
     OUTPUT_FILE,
@@ -73,6 +73,18 @@ with open(
     )
 
 print()
-print(f"Saved: {OUTPUT_FILE}")
-print(f"Pages: {len(pages)}")
-print(text[:1000])
+print(
+    f"Pages extracted : {len(pages)}"
+)
+
+print(
+    f"Saved : {OUTPUT_FILE}"
+)
+
+print()
+print("Sample page:")
+print("-" * 50)
+
+print(
+    pages[10]["text"][:500]
+)

@@ -7,12 +7,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 from langchain_core.documents import Document
-
 from langchain_chroma import Chroma
-
-from langchain_google_genai import (
-    GoogleGenerativeAIEmbeddings
-)
 from langchain_openai import OpenAIEmbeddings
 
 # ==================================================
@@ -46,12 +41,10 @@ with open(
     "r",
     encoding="utf-8"
 ) as f:
-
     chunks = json.load(f)
 
-print(
-    f"Loaded {len(chunks)} chunks"
-)
+print()
+print(f"Loaded {len(chunks)} chunks")
 
 # ==================================================
 # CREATE DOCUMENTS
@@ -61,18 +54,21 @@ documents = []
 
 for chunk in chunks:
 
-    source = chunk.get("source", "unknown")
+    source = chunk.get(
+        "source",
+        "unknown"
+    )
 
-    # =====================================
-    # TEXTBOOK CHUNKS
-    # =====================================
+    # ==================================================
+    # TEXTBOOK
+    # ==================================================
 
     if source == "textbook":
 
-        author_text = ""
-
-        if chunk.get("author"):
-            author_text = f"Author: {chunk['author']}\n"
+        author = chunk.get(
+            "author",
+            ""
+        )
 
         page_content = f"""
 Source: Textbook
@@ -81,7 +77,7 @@ Unit: {chunk['unit']}
 
 Title: {chunk['title']}
 
-{author_text}
+Author: {author}
 Section: {chunk['section']}
 
 {chunk['text']}
@@ -96,20 +92,23 @@ Section: {chunk['section']}
             "chunk_id": chunk["chunk_id"]
         }
 
-    # =====================================
-    # PEDAGOGY CHUNKS
-    # =====================================
+    # ==================================================
+    # PEDAGOGY 1
+    # ==================================================
 
-    else:
+    elif source == "pedagogy_1":
 
         page_content = f"""
-Source: {source}
+Source: Pedagogy 1
 
 Unit: {chunk['unit']}
 
 Topic Number: {chunk['topic_number']}
 
 Topic: {chunk['topic']}
+
+Keywords:
+{chunk['topic']}
 
 {chunk['text']}
 """
@@ -123,6 +122,42 @@ Topic: {chunk['topic']}
             "page_end": chunk.get("page_end"),
             "chunk_id": chunk["chunk_id"]
         }
+
+    # ==================================================
+    # PEDAGOGY 2
+    # ==================================================
+
+    elif source == "pedagogy_2":
+
+        page_content = f"""
+Source: Pedagogy 2
+
+Block: {chunk['block']}
+Unit: {chunk['unit']}
+Global Unit: {chunk['global_unit']}
+
+Title: {chunk['title']}
+
+Keywords:
+{chunk['title']}
+
+{chunk['text']}
+"""
+        
+
+        metadata = {
+            "source": source,
+            "block": chunk["block"],
+            "unit": chunk["unit"],
+            "global_unit": chunk["global_unit"],
+            "title": chunk["title"],
+            "page_start": chunk["page_start"],
+            "page_end": chunk["page_end"],
+            "chunk_id": chunk["chunk_id"]
+        }
+
+    else:
+        continue
 
     documents.append(
         Document(
@@ -149,18 +184,25 @@ embeddings = OpenAIEmbeddings(
 
 if VECTOR_DB_DIR.exists():
 
+    print()
+    print("Deleting old vector DB...")
+
     shutil.rmtree(
         VECTOR_DB_DIR
     )
 
 # ==================================================
-# BUILD CHROMA
+# CREATE CHROMA
 # ==================================================
 
 vectorstore = Chroma(
     persist_directory=str(VECTOR_DB_DIR),
     embedding_function=embeddings
 )
+
+# ==================================================
+# ADD DOCUMENTS
+# ==================================================
 
 BATCH_SIZE = 100
 
@@ -195,18 +237,19 @@ for i in range(0, len(documents), BATCH_SIZE):
             else:
                 raise
 
-    time.sleep(10)
+    time.sleep(1)
+
+# ==================================================
+# SUMMARY
+# ==================================================
 
 print()
+print("✅ Vector database created")
+print(f"📁 {VECTOR_DB_DIR}")
+print(f"📚 Embedded {len(documents)} chunks")
 
-print(
-    "✅ Vector database created"
-)
-
-print(
-    f"📁 {VECTOR_DB_DIR}"
-)
-
-print(
-    f"📚 Embedded {len(documents)} chunks"
-)
+print()
+print("Metadata examples")
+print("-" * 50)
+print(documents[0].metadata)
+print(documents[-1].metadata)
