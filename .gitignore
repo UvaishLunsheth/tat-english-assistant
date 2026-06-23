@@ -27,9 +27,14 @@ vectorstore/
 # Data & Documents
 # ========================
 # Uncomment these if you don't want to push the heavy/copyrighted PDFs to GitHub
-# data/*.pdf
-# data/raw/
-# data/processed/
+data/*.pdf
+data/raw/
+data/processed/
+data/references/
+data/ocr/
+data/pedagogy/
+data/11-English.pdf
+data/12-English.pdf
 
 # ========================
 # Python

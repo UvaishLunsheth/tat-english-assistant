@@ -1,0 +1,193 @@
+{
+  "topic": "Direct Method",
+  "mcq": [
+    {
+      "question": "When was the Direct Method developed?",
+      "options": [
+        "Beginning of the eighteenth century",
+        "End of the nineteenth century",
+        "Mid-twentieth century",
+        "Early twenty-first century"
+      ],
+      "answer": "End of the nineteenth century"
+    },
+    {
+      "question": "Which method did the Direct Method challenge?",
+      "options": [
+        "Bilingual Method",
+        "Structural Approach",
+        "Grammar-Translation method",
+        "Natural Approach"
+      ],
+      "answer": "Grammar-Translation method"
+    },
+    {
+      "question": "How is target language grammar taught in the Direct Method?",
+      "options": [
+        "Deductively",
+        "Explicitly with rules",
+        "Inductively",
+        "Through translation"
+      ],
+      "answer": "Inductively"
+    },
+    {
+      "question": "What is neglected in the Direct Method according to its principles?",
+      "options": [
+        "Target language",
+        "Everyday vocabulary",
+        "Mother tongue/native language",
+        "Listening skills"
+      ],
+      "answer": "Mother tongue/native language"
+    },
+    {
+      "question": "Who proposed that monolingual language teaching could be effective by associating form and meaning?",
+      "options": [
+        "Gouin",
+        "Franke (1884)",
+        "Thornbury (2000)",
+        "Dr. West"
+      ],
+      "answer": "Franke (1884)"
+    },
+    {
+      "question": "Which of the following is a merit of the Direct Method?",
+      "options": [
+        "Learner avoids L1 and thinks in L2",
+        "Grammar rules are explicitly explained",
+        "Textbooks are used extensively in initial years",
+        "Mother tongue is used for clarification"
+      ],
+      "answer": "Learner avoids L1 and thinks in L2"
+    },
+    {
+      "question": "What is used to teach vocabulary in the Direct Method?",
+      "options": [
+        "Translation into L1",
+        "Detailed grammatical explanations",
+        "Realia, pictures or demonstration",
+        "Memorization of word lists"
+      ],
+      "answer": "Realia, pictures or demonstration"
+    },
+    {
+      "question": "Which method was developed as a response to the Direct Method?",
+      "options": [
+        "Grammar-Translation method",
+        "Bilingual Method",
+        "Dr. West’s New Method",
+        "Structural Approach"
+      ],
+      "answer": "Dr. West’s New Method"
+    }
+  ],
+  "fill_blank": [
+    {
+      "question": "The Direct Method was developed at the end of the ________ century.",
+      "answer": "nineteenth"
+    },
+    {
+      "question": "In the Direct Method, teaching is done in the ________ language.",
+      "answer": "target"
+    },
+    {
+      "question": "The Direct Method lost its popularity by ________ in Europe.",
+      "answer": "1920s"
+    },
+    {
+      "question": "Teacher and learner communicate orally in ________ and ________ form in the Direct Method.",
+      "answer": "question, answer"
+    },
+    {
+      "question": "The Direct Method was the first teaching method recognized by language teachers and experts and it moved language teaching into the '________ era'.",
+      "answer": "methods"
+    }
+  ],
+  "true_false": [
+    {
+      "statement": "The Direct Method emphasizes the use of the mother tongue for teaching.",
+      "answer": false
+    },
+    {
+      "statement": "Grammar rules must not be explained in the Direct Method.",
+      "answer": true
+    },
+    {
+      "statement": "Textbooks are used in the initial years of learning in the Direct Method.",
+      "answer": false
+    },
+    {
+      "statement": "Listening and speaking skills are given importance in the Direct Method.",
+      "answer": true
+    },
+    {
+      "statement": "The Direct Method challenged the views on the Grammar-Translation method.",
+      "answer": true
+    }
+  ],
+  "match": [
+    {
+      "left": "Development of Direct Method",
+      "right": "End of the nineteenth century"
+    },
+    {
+      "left": "Grammar teaching in Direct Method",
+      "right": "Inductively"
+    },
+    {
+      "left": "Vocabulary teaching in Direct Method",
+      "right": "Realia, pictures or demonstration"
+    },
+    {
+      "left": "Method challenged by Direct Method",
+      "right": "Grammar-Translation method"
+    },
+    {
+      "left": "Proponent of monolingual teaching proposition",
+      "right": "Franke (1884)"
+    }
+  ],
+  "short_answer": [
+    {
+      "question": "List two principles of the Direct Method.",
+      "answer": "1. Teaching is done in the target language. Mother tongue/native language of the learners is neglected; 2. Everyday vocabulary and sentences are given importance while teaching."
+    },
+    {
+      "question": "State two merits of the Direct Method.",
+      "answer": "1. L2 is learnt just like learner’s L1; 2. Learner avoids L1 and thinks in L2."
+    },
+    {
+      "question": "How is grammar taught in the Direct Method?",
+      "answer": "Target language grammar is taught inductively."
+    },
+    {
+      "question": "What is neglected in the Direct Method according to its principles?",
+      "answer": "Mother tongue/native language of the learners is neglected."
+    },
+    {
+      "question": "What is not used in the initial years of learning in the Direct Method?",
+      "answer": "The textbook is not used in the initial years of learning."
+    }
+  ],
+  "medium_answer": [
+    {
+      "question": "Explain the historical context of the Direct Method's development.",
+      "answer": "The Direct Method was developed at the end of the nineteenth century and it challenged the views on Grammar-Translation method. Gouin and others tried to put forth a method based on scientific observations of children’s language learning. Franke (1884) put forth a proposition that monolingual language teaching could be effective by associating form and meaning."
+    },
+    {
+      "question": "Describe how vocabulary is taught in the Direct Method, including abstract vocabulary.",
+      "answer": "Realia, pictures or demonstration is used to teach vocabulary. The technique of association of ideas is used while teaching abstract vocabulary."
+    },
+    {
+      "question": "List any five principles of the Direct Method.",
+      "answer": "1. Teaching is done in the target language. Mother tongue/native language of the learners is neglected; 2. Everyday vocabulary and sentences are given importance while teaching; 3. Target language grammar is taught inductively; 4. Teaching items of the lesson are introduced to the learners orally; 5. Teacher and learner communicate orally in question and answer form."
+    }
+  ],
+  "long_answer": [
+    {
+      "question": "Discuss the key principles and merits of the Direct Method, as described in the provided text.",
+      "answer": "The language learning principles of the Direct Method are: 1. Teaching is done in the target language. Mother tongue/native language of the learners is neglected; 2. Everyday vocabulary and sentences are given importance while teaching; 3. Target language grammar is taught inductively; 4. Teaching items of the lesson are introduced to the learners orally; 5. Teacher and learner communicate orally in question and answer form; 6. Realia, pictures or demonstration is used to teach vocabulary. The technique of association of ideas is used while teaching abstract vocabulary; 7. Listening and speaking skills are given importance; and 8. Pronunciation and grammar are crucial. The merits of the Direct Method are: 1. L2 is learnt just like learner’s L1; 2. Learner avoids L1 and thinks in L2; 3. Audiovisual teaching aids are used to make learning easier."
+    }
+  ]
+}

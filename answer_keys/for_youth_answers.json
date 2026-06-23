@@ -1,0 +1,66 @@
+{
+  "topic": "for youth",
+  "mcq": [
+    "Wanting to be somebody",
+    "Being very quiet and free of preoccupations",
+    "Somebody or other",
+    "Great intelligence",
+    "Peculiarity"
+  ],
+  "fill_blank": [
+    "fear",
+    "education",
+    "environment",
+    "false",
+    "preoccupations"
+  ],
+  "true_false": [
+    true,
+    false,
+    true,
+    false,
+    true
+  ],
+  "short_answer": [
+    {
+      "question": "What is the author's view on the purpose of examinations?",
+      "answer": "According to the author, examinations are for the purpose of giving you a position, to make you somebody."
+    },
+    {
+      "question": "Why are we not free when we want to be somebody?",
+      "answer": "The moment we want to be somebody, we are no longer free because it implies a demand on our part to be something, which prevents true freedom."
+    },
+    {
+      "question": "What is the real function of education?",
+      "answer": "The real function of education is to help you from childhood not to imitate anybody, but to be yourself all the time, and to cultivate this extraordinary freedom."
+    },
+    {
+      "question": "What does it mean to be intelligent, according to the text?",
+      "answer": "To be intelligent means to have deep insight to solve any problem, and it comes into being only when you begin to understand your whole environment and the influences closing in on you."
+    },
+    {
+      "question": "What are some things that give us self-assurance and a sense of importance?",
+      "answer": "Being told what marvellous people we are, how lovely we look, or what extraordinary intelligence we have, and putting letters after our names, all give us self-assurance and a sense of importance."
+    }
+  ],
+  "medium_answer": [
+    {
+      "question": "Explain J. Krishnamurthy's concept of freedom.",
+      "answer": "Freedom, according to J. Krishnamurthy, is a very complex problem. It is not merely doing what happens to suit you, going where you like, or thinking what you will, nor is it just independence. Freedom is really a state of mind in which there is no fear or compulsion, no urge to be secured. It implies great intelligence, which comes into being only when one understands their whole environment and revolts against false influences and traditions, rather than trying to become something or imitating a noble example. It lies in understanding what you are from moment to moment."
+    },
+    {
+      "question": "How does the author differentiate between what education currently teaches and what it should teach?",
+      "answer": "The author states that current education encourages us to become 'something or other,' to get a position, and to be somebody, which prevents freedom. However, the real function of education should be to help us from childhood not to imitate anybody, but to be ourselves all the time. It should cultivate extraordinary freedom by enabling us to understand ourselves and revolt against the whole tradition that forces us to be something."
+    },
+    {
+      "question": "What are the main obstacles to real freedom as described in the text?",
+      "answer": "The main obstacles to real freedom include fear (of not having a good position, of what others will say, of not following tradition), compulsion, and the urge to be secured. Wanting to be somebody, famous, or successful, and imitating others (like heroes, masters, saints, or relatives) also prevent freedom. Furthermore, following the authority of tradition, parents, teachers, and conforming unthinkingly to social, religious, governmental, and cultural influences are significant barriers."
+    }
+  ],
+  "long_answer": [
+    {
+      "question": "Discuss J. Krishnamurthy's views on the nature of the 'self' and how understanding it leads to freedom.",
+      "answer": "J. Krishnamurthy describes the 'self' as a very complex thing, not merely the obvious entity that goes to school, quarrels, plays games, or is afraid. It is also something hidden, not obvious, made up not only of one's own thoughts but also of all things that have been put into the mind by other people, by books, newspapers, and leaders. To achieve freedom, one must understand this entire 'self'. This understanding is possible only when one doesn't want to be somebody, doesn't imitate, and doesn't follow. The author emphasizes the difficulty of simply 'being yourself' – whether ugly or beautiful, envious or jealous – and understanding it, rather than trying to change into something noble. It is in this very understanding of what you are, from moment to moment, that a transformation occurs, leading to a true revolution and extraordinary freedom. This deep insight into oneself, free from the desire to become something different, is the path to real freedom."
+    }
+  ]
+}

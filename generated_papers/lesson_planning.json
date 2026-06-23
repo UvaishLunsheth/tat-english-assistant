@@ -1,0 +1,222 @@
+{
+  "topic": "Lesson Planning",
+  "mcq": [
+    {
+      "question": "Who is credited with giving the five steps of instruction known as Herbertianism?",
+      "options": [
+        "Johann Friedrich Herbert",
+        "John Dewey",
+        "Lev Vygotsky",
+        "Jean Piaget"
+      ],
+      "answer": "Johann Friedrich Herbert",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following is NOT one of the Herbertian Steps of Lesson Plan?",
+      "options": [
+        "Preparation",
+        "Presentation",
+        "Evaluation",
+        "Application"
+      ],
+      "answer": "Evaluation",
+      "marks": 1
+    },
+    {
+      "question": "In a traditional classroom, what is given importance?",
+      "options": [
+        "Learner interests",
+        "Primary sources",
+        "Textbooks and workbooks",
+        "Interaction and building on prior knowledge"
+      ],
+      "answer": "Textbooks and workbooks",
+      "marks": 1
+    },
+    {
+      "question": "What is an objective of Pre-reading Activity in the CCE method?",
+      "options": [
+        "Summarize the story in their own words",
+        "Predict what happens next during reading",
+        "Make a guess of the story from the chapter headings",
+        "Construct a discourse"
+      ],
+      "answer": "Make a guess of the story from the chapter headings",
+      "marks": 1
+    },
+    {
+      "question": "What is the major activity of the Post-reading session in the CCE method?",
+      "options": [
+        "Model reading by the teacher",
+        "Teaching vocabulary",
+        "Construction of a discourse by the learner",
+        "Testing previous knowledge"
+      ],
+      "answer": "Construction of a discourse by the learner",
+      "marks": 1
+    }
+  ],
+  "fill_blank": [
+    {
+      "question": "The lesson plan is the teacher's detailed description of ________ for the lesson.",
+      "answer": "instruction",
+      "marks": 1
+    },
+    {
+      "question": "The Herbertian step where new material is related to past experiences to motivate learners is called ________.",
+      "answer": "Preparation",
+      "marks": 1
+    },
+    {
+      "question": "In a constructivist classroom, teaching begins with the ________ – expanding to parts.",
+      "answer": "whole",
+      "marks": 1
+    },
+    {
+      "question": "During the While-reading session, the facilitator asks reflective and ________ questions.",
+      "answer": "inferential",
+      "marks": 1
+    },
+    {
+      "question": "The discourse constructed by the learners may have certain errors like grammatical errors, syntax, morphology, punctuation, spelling etc. These errors are rectified in the classroom during the process of ________.",
+      "answer": "editing",
+      "marks": 1
+    }
+  ],
+  "true_false": [
+    {
+      "statement": "Preparation of a lesson plan depends solely on the subject matter.",
+      "answer": false,
+      "marks": 1
+    },
+    {
+      "statement": "In a traditional classroom, learner interests are pursued.",
+      "answer": false,
+      "marks": 1
+    },
+    {
+      "statement": "One objective of While-reading Activities is to summarize the story in their own words.",
+      "answer": false,
+      "marks": 1
+    },
+    {
+      "statement": "The facilitator reads the content with proper stress and pause during the While-reading session.",
+      "answer": true,
+      "marks": 1
+    },
+    {
+      "statement": "Home assignment is the first step in the Steps for Teaching of Prose.",
+      "answer": false,
+      "marks": 1
+    }
+  ],
+  "match": [
+    {
+      "left": "1. Preparation",
+      "right": "C. Relating new material to past experiences",
+      "marks": 1
+    },
+    {
+      "left": "2. Generalization",
+      "right": "B. Leading mind beyond the level of perception and concrete",
+      "marks": 1
+    },
+    {
+      "left": "3. Application",
+      "right": "A. Using acquired knowledge in a utilitarian way",
+      "marks": 1
+    },
+    {
+      "left": "4. Association",
+      "right": "D. Assimilation of new ideas to develop a link",
+      "marks": 1
+    },
+    {
+      "left": "5. Presentation",
+      "right": "E. Presenting concepts following various methods",
+      "marks": 1
+    },
+    {
+      "left": "1. Traditional Classroom",
+      "right": "B. Curriculum is fixed",
+      "marks": 1
+    },
+    {
+      "left": "2. Constructivist Classroom",
+      "right": "A. Learner interests are pursued",
+      "marks": 1
+    },
+    {
+      "left": "3. Pre-reading Activity",
+      "right": "C. Helps learners to make a guess of the story from chapter headings",
+      "marks": 1
+    },
+    {
+      "left": "4. Post-reading Activity",
+      "right": "E. Helps learners to summarize the story in their own words",
+      "marks": 1
+    },
+    {
+      "left": "5. Editing Session",
+      "right": "D. Rectifies grammatical errors, syntax, morphology, punctuation, spelling",
+      "marks": 1
+    }
+  ],
+  "short_answer": [
+    {
+      "question": "List any two objectives of Pre-reading Activity in the CCE method.",
+      "answer": "It helps learners to: - make a guess of the story from the chapter headings; - predict what will happen from the pictures; - choose new and difficult vocabulary from the story; - teach the vocabulary and review them; - test the comprehension of the learners; and - use the vocabulary in their own sentences. (Any two of these are acceptable.)",
+      "marks": 2
+    },
+    {
+      "question": "What is the role of the teacher in a traditional classroom according to the provided text?",
+      "answer": "In a traditional classroom, the teacher gives/learners receives, and the teacher assumes a directive and authoritative role.",
+      "marks": 2
+    },
+    {
+      "question": "Briefly explain the Herbertian step of 'Preparation'.",
+      "answer": "Preparation is the stage where the new material or content learnt will be related to past to motivate and establish connection with past experiences of the learners.",
+      "marks": 2
+    },
+    {
+      "question": "What kind of questions does the facilitator ask during the While-reading session?",
+      "answer": "The facilitator asks reflective and inferential questions which assist the learner to understand the context of the content.",
+      "marks": 2
+    },
+    {
+      "question": "Mention any two types of errors that are rectified during the Editing session in the CCE method.",
+      "answer": "The discourse constructed by the learners may have certain errors like grammatical errors, syntax, morphology, punctuation, spelling etc. (Any two of these are acceptable.)",
+      "marks": 2
+    }
+  ],
+  "medium_answer": [
+    {
+      "question": "Differentiate between a traditional classroom and a constructivist classroom based on any four points mentioned in the text.",
+      "answer": "Traditional Classroom: 1. teaching begins with parts of the whole–emphasizes basic skills; 2. the curriculum is fixed; 3. textbooks and workbooks are given importance; 4. teacher gives/learners receives; 5. the teacher assumes directive and authoritative role; 6. assessment is through testing; 7. knowledge is inert; and 8. learners work individually.\nConstructivist Classroom: 1. teaching begins with the whole – expanding to parts; 2. learner interests are pursued; 3. teachers use primary sources or manipulative materials; 4. learning is interaction – building on what learners already know; 5. learners reflect on and talk about what they are doing and how their understanding is changing.\n(Any four contrasting points from these lists are acceptable.)",
+      "marks": 4
+    },
+    {
+      "question": "Describe the 'Steps for Teaching of Prose' as outlined in the Herbertian approach.",
+      "answer": "The Steps for Teaching of Prose are: 1. Motivation/Testing previous knowledge; 2. Declaration of the topic/announcement of the topic; 3. Teaching vocabulary; 4. Teaching structure; 5. Teaching Grammar items (synonyms, antonyms, idioms, phrases); 6. Dividing the text into smaller units; 7. Model reading by the teacher; 8. Second reading by the teacher; 9. Explaining the content (setting, character, themes, plot, style); 10. Loud reading by the learners; 11. Silent reading by the learners; 12. Testing comprehension through questioning; 13. Recapitulation; 14. Home assignment.",
+      "marks": 4
+    },
+    {
+      "question": "Explain the objectives of Pre-reading and Post-reading activities in the CCE method.",
+      "answer": "Objectives of Pre-reading Activity: It helps learners to: - make a guess of the story from the chapter headings; - predict what will happen from the pictures; - choose new and difficult vocabulary from the story; - teach the vocabulary and review them; - test the comprehension of the learners; and - use the vocabulary in their own sentences.\nObjectives of Post-reading Activity: It helps learners to: - test the comprehension of the learners; - predict what happens next; - think different conclusions of a story or ending in the groups; - share their ideas in the classroom; - summarize the story in their own words; and - talk about their favourite character of the story.",
+      "marks": 4
+    }
+  ],
+  "long_answer": [
+    {
+      "question": "Elaborate on the Herbertian Steps of Lesson Plan, providing a brief explanation for each step.",
+      "answer": "Johann Friedrich Herbert presented five steps of Instruction:\n1. Preparation: It is the stage where the new material or content learnt will be related to past to motivate and establish connection with past experiences of the learners.\n2. Presentation: It is the way of presenting the concepts following various methods, techniques and strategies.\n3. Association: Through assimilation of new ideas association or link is developed in learning.\n4. Generalization: Leading mind beyond the level of perception and concrete.\n5. Application: Using acquired knowledge in a utilitarian way.",
+      "marks": 6
+    },
+    {
+      "question": "Describe the complete process of teaching prose based on the CCE method, covering pre-reading, while-reading, post-reading, and editing sessions.",
+      "answer": "The CCE method for teaching prose involves:\nI. Pre-reading: Teachers interact with the learner in an informal way to psychologically tune them to the classroom activities. They sensitize the learner by showing a visual clipping, a news report, a photograph or face sheet. Then the teacher asks analytical questions eliciting free responses from the learners. Questioning helps the learners to make intelligent predictions on what they are going to learn.\nII. While-reading session: This session includes: c. Questioning by the facilitator: The facilitator asks reflective and inferential questions which assist the learner to understand the context of the content. d. Reading aloud by the facilitator: The facilitator reads the content with proper stress and pause.\nIII. Post-reading session: The major activity of this session is the construction of a discourse by the learner through interaction, brainstorming and presenting ideas by few individuals. Then the facilitator explains the meaning of the words, explain the structure situational involving the learners in various discourse.\nIV. Editing: The discourse constructed by the learners may have certain errors like grammatical errors, syntax, morphology, punctuation, spelling etc. These errors are rectified in the classroom by the facilitator during the process of discourse. Then learners are instructed to edit the aspects written on the blackboard and refine it. The facilitator edits the children's version and gives a constructive feedback.",
+      "marks": 6
+    }
+  ]
+}

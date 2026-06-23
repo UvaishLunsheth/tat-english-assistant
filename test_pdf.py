@@ -1,23 +1,17 @@
-# test_pdf.py
+from ingestion.load_std11_unit import (
+    load_std11_unit
+)
 
-from pypdf import PdfReader
+from utils.std11_read_finder import (
+    find_read_positions
+)
 
-PDF_PATH = "data/references/pedagogy_2.PDF"
+for unit in [1, 5, 9, 10]:
 
-reader = PdfReader(PDF_PATH)
+    text = load_std11_unit(unit)
 
-print(f"Pages: {len(reader.pages)}")
+    positions = find_read_positions(text)
 
-# 1 subtracted from each target page (144->143, 203->202, etc.)
-for i in [143, 150, 170, 182, 202, 221, 244, 270]:
-
-    page = reader.pages[i]
-
-    text = page.extract_text()
-
-    print()
-    print("=" * 50)
-    print(f"PAGE {i + 1}")
-    print("=" * 50)
-
-    print(text[:500])
+    print(
+        f"Unit {unit} -> {len(positions)} reads"
+    )

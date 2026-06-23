@@ -47,44 +47,38 @@ print()
 print(f"Loaded {len(chunks)} chunks")
 
 # ==================================================
-# CREATE DOCUMENTS
+# DOCUMENTS
 # ==================================================
 
 documents = []
 
 for chunk in chunks:
 
-    source = chunk.get(
-        "source",
-        "unknown"
-    )
+    source = chunk["source"]
 
-    # ==================================================
-    # TEXTBOOK
-    # ==================================================
+    # ==========================================
+    # STD 11 TEXTBOOK
+    # ==========================================
 
-    if source == "textbook":
-
-        author = chunk.get(
-            "author",
-            ""
-        )
+    if source == "std11_textbook":
 
         page_content = f"""
-Source: Textbook
+Source: Std 11 English
 
 Unit: {chunk['unit']}
 
 Title: {chunk['title']}
 
-Author: {author}
 Section: {chunk['section']}
+
+Author: {chunk.get('author','')}
 
 {chunk['text']}
 """
 
         metadata = {
             "source": source,
+            "standard": 11,
             "unit": chunk["unit"],
             "title": chunk["title"],
             "section": chunk["section"],
@@ -92,9 +86,39 @@ Section: {chunk['section']}
             "chunk_id": chunk["chunk_id"]
         }
 
-    # ==================================================
+    # ==========================================
+    # STD 12 TEXTBOOK
+    # ==========================================
+
+    elif source == "std12_textbook":
+
+        page_content = f"""
+Source: Std 12 English
+
+Unit: {chunk['unit']}
+
+Title: {chunk['title']}
+
+Section: {chunk['section']}
+
+Author: {chunk.get('author','')}
+
+{chunk['text']}
+"""
+
+        metadata = {
+            "source": source,
+            "standard": 12,
+            "unit": chunk["unit"],
+            "title": chunk["title"],
+            "section": chunk["section"],
+            "author": chunk.get("author"),
+            "chunk_id": chunk["chunk_id"]
+        }
+
+    # ==========================================
     # PEDAGOGY 1
-    # ==================================================
+    # ==========================================
 
     elif source == "pedagogy_1":
 
@@ -123,9 +147,9 @@ Keywords:
             "chunk_id": chunk["chunk_id"]
         }
 
-    # ==================================================
+    # ==========================================
     # PEDAGOGY 2
-    # ==================================================
+    # ==========================================
 
     elif source == "pedagogy_2":
 
@@ -133,7 +157,9 @@ Keywords:
 Source: Pedagogy 2
 
 Block: {chunk['block']}
+
 Unit: {chunk['unit']}
+
 Global Unit: {chunk['global_unit']}
 
 Title: {chunk['title']}
@@ -143,7 +169,6 @@ Keywords:
 
 {chunk['text']}
 """
-        
 
         metadata = {
             "source": source,
@@ -179,7 +204,7 @@ embeddings = OpenAIEmbeddings(
 )
 
 # ==================================================
-# DELETE OLD VECTOR DB
+# RESET VECTOR DB
 # ==================================================
 
 if VECTOR_DB_DIR.exists():
@@ -201,7 +226,7 @@ vectorstore = Chroma(
 )
 
 # ==================================================
-# ADD DOCUMENTS
+# BATCH INSERT
 # ==================================================
 
 BATCH_SIZE = 100
@@ -214,9 +239,7 @@ for i in range(0, len(documents), BATCH_SIZE):
 
         try:
 
-            vectorstore.add_documents(
-                batch
-            )
+            vectorstore.add_documents(batch)
 
             print(
                 f"Done batch {(i // BATCH_SIZE) + 1}"
@@ -244,12 +267,16 @@ for i in range(0, len(documents), BATCH_SIZE):
 # ==================================================
 
 print()
-print("✅ Vector database created")
-print(f"📁 {VECTOR_DB_DIR}")
-print(f"📚 Embedded {len(documents)} chunks")
+print("=" * 60)
+print("VECTORSTORE SUMMARY")
+print("=" * 60)
+
+print(f"Documents : {len(documents)}")
+print(f"Vector DB : {VECTOR_DB_DIR}")
 
 print()
-print("Metadata examples")
-print("-" * 50)
+print("Example metadata:")
 print(documents[0].metadata)
-print(documents[-1].metadata)
+
+print()
+print("✅ Vector database created successfully")

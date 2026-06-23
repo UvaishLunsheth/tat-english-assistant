@@ -1,0 +1,192 @@
+{
+  "topic": "for youth",
+  "mcq": [
+    {
+      "question": "What is the real clue to understanding the problem of freedom?",
+      "options": [
+        "Having a good position in life",
+        "Being famous",
+        "Wanting to be somebody",
+        "Following tradition"
+      ],
+      "answer": "Wanting to be somebody",
+      "marks": 1
+    },
+    {
+      "question": "What is required for the mind to observe extraordinary beauty?",
+      "options": [
+        "Being occupied with problems",
+        "Being engaged in thinking",
+        "Being very quiet and free of preoccupations",
+        "Having deep insight"
+      ],
+      "answer": "Being very quiet and free of preoccupations",
+      "marks": 1
+    },
+    {
+      "question": "What does education encourage us to become, according to the author?",
+      "options": [
+        "Free individuals",
+        "Somebody or other",
+        "Deep thinkers",
+        "Rebels against tradition"
+      ],
+      "answer": "Somebody or other",
+      "marks": 1
+    },
+    {
+      "question": "What does freedom imply?",
+      "options": [
+        "Independence",
+        "Doing what suits you",
+        "Great intelligence",
+        "Following authority"
+      ],
+      "answer": "Great intelligence",
+      "marks": 1
+    },
+    {
+      "question": "What is the meaning of 'idiosyncrasy' as per the glossary?",
+      "options": [
+        "Peculiarity",
+        "Understanding",
+        "Desire",
+        "Self-confidence"
+      ],
+      "answer": "Peculiarity",
+      "marks": 1
+    }
+  ],
+  "fill_blank": [
+    {
+      "question": "Freedom is really a state of mind in which there is no ______ or compulsion.",
+      "answer": "fear",
+      "marks": 1
+    },
+    {
+      "question": "To cultivate this freedom is the real function of ______.",
+      "answer": "education",
+      "marks": 1
+    },
+    {
+      "question": "Intelligence comes into being only when you begin to understand your whole ______.",
+      "answer": "environment",
+      "marks": 1
+    },
+    {
+      "question": "The hope of a new world is in those of you who begin to see what is ______ and revolt against it.",
+      "answer": "false",
+      "marks": 1
+    },
+    {
+      "question": "To observe something beautiful, your mind must be free of ______.",
+      "answer": "preoccupations",
+      "marks": 1
+    }
+  ],
+  "true_false": [
+    {
+      "statement": "An intelligent mind can understand that it is not free from the impact of tradition.",
+      "answer": true,
+      "marks": 1
+    },
+    {
+      "statement": "We can enjoy beauty when our mind is engaged in thinking.",
+      "answer": false,
+      "marks": 1
+    },
+    {
+      "statement": "The moment we want to be something, we are no longer free.",
+      "answer": true,
+      "marks": 1
+    },
+    {
+      "statement": "Freedom means to do what we want to do.",
+      "answer": false,
+      "marks": 1
+    },
+    {
+      "statement": "To be yourself is very difficult because you think you are ignoble.",
+      "answer": true,
+      "marks": 1
+    }
+  ],
+  "match": [
+    {
+      "left": "Idiosyncrasy",
+      "right": "peculiarity",
+      "marks": 1
+    },
+    {
+      "left": "Aspire",
+      "right": "wish",
+      "marks": 1
+    },
+    {
+      "left": "Insight",
+      "right": "understanding, vision",
+      "marks": 1
+    },
+    {
+      "left": "Conform",
+      "right": "to be traditional, to be conventional",
+      "marks": 1
+    },
+    {
+      "left": "Absurdity",
+      "right": "meaninglessness",
+      "marks": 1
+    }
+  ],
+  "short_answer": [
+    {
+      "question": "What is the author's view on the purpose of examinations?",
+      "answer": "According to the author, examinations are for the purpose of giving you a position, to make you somebody.",
+      "marks": 2
+    },
+    {
+      "question": "Why are we not free when we want to be somebody?",
+      "answer": "The moment we want to be somebody, we are no longer free because it implies a demand on our part to be something, which prevents true freedom.",
+      "marks": 2
+    },
+    {
+      "question": "What is the real function of education?",
+      "answer": "The real function of education is to help you from childhood not to imitate anybody, but to be yourself all the time, and to cultivate this extraordinary freedom.",
+      "marks": 2
+    },
+    {
+      "question": "What does it mean to be intelligent, according to the text?",
+      "answer": "To be intelligent means to have deep insight to solve any problem, and it comes into being only when you begin to understand your whole environment and the influences closing in on you.",
+      "marks": 2
+    },
+    {
+      "question": "What are some things that give us self-assurance and a sense of importance?",
+      "answer": "Being told what marvellous people we are, how lovely we look, or what extraordinary intelligence we have, and putting letters after our names, all give us self-assurance and a sense of importance.",
+      "marks": 2
+    }
+  ],
+  "medium_answer": [
+    {
+      "question": "Explain J. Krishnamurthy's concept of freedom.",
+      "answer": "Freedom, according to J. Krishnamurthy, is a very complex problem. It is not merely doing what happens to suit you, going where you like, or thinking what you will, nor is it just independence. Freedom is really a state of mind in which there is no fear or compulsion, no urge to be secured. It implies great intelligence, which comes into being only when one understands their whole environment and revolts against false influences and traditions, rather than trying to become something or imitating a noble example. It lies in understanding what you are from moment to moment.",
+      "marks": 4
+    },
+    {
+      "question": "How does the author differentiate between what education currently teaches and what it should teach?",
+      "answer": "The author states that current education encourages us to become 'something or other,' to get a position, and to be somebody, which prevents freedom. However, the real function of education should be to help us from childhood not to imitate anybody, but to be ourselves all the time. It should cultivate extraordinary freedom by enabling us to understand ourselves and revolt against the whole tradition that forces us to be something.",
+      "marks": 4
+    },
+    {
+      "question": "What are the main obstacles to real freedom as described in the text?",
+      "answer": "The main obstacles to real freedom include fear (of not having a good position, of what others will say, of not following tradition), compulsion, and the urge to be secured. Wanting to be somebody, famous, or successful, and imitating others (like heroes, masters, saints, or relatives) also prevent freedom. Furthermore, following the authority of tradition, parents, teachers, and conforming unthinkingly to social, religious, governmental, and cultural influences are significant barriers.",
+      "marks": 4
+    }
+  ],
+  "long_answer": [
+    {
+      "question": "Discuss J. Krishnamurthy's views on the nature of the 'self' and how understanding it leads to freedom.",
+      "answer": "J. Krishnamurthy describes the 'self' as a very complex thing, not merely the obvious entity that goes to school, quarrels, plays games, or is afraid. It is also something hidden, not obvious, made up not only of one's own thoughts but also of all things that have been put into the mind by other people, by books, newspapers, and leaders. To achieve freedom, one must understand this entire 'self'. This understanding is possible only when one doesn't want to be somebody, doesn't imitate, and doesn't follow. The author emphasizes the difficulty of simply 'being yourself' – whether ugly or beautiful, envious or jealous – and understanding it, rather than trying to change into something noble. It is in this very understanding of what you are, from moment to moment, that a transformation occurs, leading to a true revolution and extraordinary freedom. This deep insight into oneself, free from the desire to become something different, is the path to real freedom.",
+      "marks": 6
+    }
+  ]
+}

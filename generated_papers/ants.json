@@ -1,0 +1,151 @@
+{
+  "topic": "Ants",
+  "mcq": [
+    {
+      "question": "Which type of ants are known for keeping other ants as slaves?",
+      "options": [
+        "Driver ants",
+        "Umbrella ants",
+        "Red ants",
+        "Cow ants"
+      ],
+      "answer": "Red ants",
+      "marks": 1
+    },
+    {
+      "question": "What is the primary food source for the 'umbrella ants' of South America?",
+      "options": [
+        "Honey-like liquid",
+        "Other insects",
+        "Fungus",
+        "Leaves of beans"
+      ],
+      "answer": "Fungus",
+      "marks": 1
+    },
+    {
+      "question": "What do the 'cow ants' give out that other ants relish?",
+      "options": [
+        "Chewed leaves",
+        "Fungus",
+        "Honey-like liquid",
+        "Bits of insects"
+      ],
+      "answer": "Honey-like liquid",
+      "marks": 1
+    },
+    {
+      "question": "Which ants are described as being completely blind and devouring any animal in their path?",
+      "options": [
+        "Red ants",
+        "Driver ants",
+        "Black ants",
+        "Umbrella ants"
+      ],
+      "answer": "Driver ants",
+      "marks": 1
+    }
+  ],
+  "fill_blank": [
+    {
+      "question": "The most ferocious kind of ants are the _________ ants of Africa.",
+      "answer": "driver",
+      "marks": 1
+    },
+    {
+      "question": "Ants domesticate 'cows' which are a kind of _________ found on rose and bean leaves.",
+      "answer": "greenfly",
+      "marks": 1
+    },
+    {
+      "question": "When red ants want slaves, they _________ the nests of black ants and abduct their eggs.",
+      "answer": "ambush",
+      "marks": 1
+    },
+    {
+      "question": "Ants ensure that no one in the nest is allowed to be _________.",
+      "answer": "indolent",
+      "marks": 1
+    }
+  ],
+  "true_false": [
+    {
+      "statement": "Black ants are larger in size than the red ants that enslave them.",
+      "answer": false,
+      "marks": 1
+    },
+    {
+      "statement": "Driver ants have a fixed home and do not move frequently.",
+      "answer": false,
+      "marks": 1
+    },
+    {
+      "statement": "Ants are known to nurse their sick and bury their dead.",
+      "answer": true,
+      "marks": 1
+    },
+    {
+      "statement": "Umbrella ants are named because they carry large pieces of leaf over their heads.",
+      "answer": true,
+      "marks": 1
+    }
+  ],
+  "match": [
+    {
+      "left": "Red ants",
+      "right": "Keep black ants as slaves",
+      "marks": 1
+    },
+    {
+      "left": "Driver ants",
+      "right": "Completely blind",
+      "marks": 1
+    },
+    {
+      "left": "Umbrella ants",
+      "right": "Grow fungus for food",
+      "marks": 1
+    },
+    {
+      "left": "Cow ants",
+      "right": "Provide honey-like liquid",
+      "marks": 1
+    }
+  ],
+  "short_answer": [
+    {
+      "question": "How do red ants acquire their slaves?",
+      "answer": "When the red ants want slaves, they ambush the nests of the black ants and abduct some of their eggs. When these eggs hatch in the red ants' nests, the black ants which come out are treated as slaves.",
+      "marks": 2
+    },
+    {
+      "question": "What is the behavior of people when an army of driver ants enters a house?",
+      "answer": "When an army of the driver ants enters a house, the people flee into the forest and stay there until the ants have passed. When they return, they find that every insect and spider in the house has been cleared away.",
+      "marks": 2
+    },
+    {
+      "question": "Describe the 'farming' process of the umbrella ants.",
+      "answer": "The umbrella ants take pieces of leaf to their nests, chew them up nicely, and then make beds of these chewed-up leaves. On these beds grows a kind of fungus, which is their food.",
+      "marks": 2
+    }
+  ],
+  "medium_answer": [
+    {
+      "question": "Explain how ants demonstrated their organizational skills and cooperation when carrying heavy loads up a steep pit.",
+      "answer": "A scientist observed ants carrying bits of insects up a steep pit. The work was arduous. The ants immediately organized the work: some carried the loads, while others went in front and cleared away any sand or small stone that obstructed the way. At points where it was difficult to get a foothold, other ants positioned themselves so the carriers could easily climb over them. When they encountered a smooth, steep part without footholds, one ant reached the top and conveyed a message. Then, an ant-chain was formed by ants climbing down backward, each holding the tail end of another ant, allowing the ants with loads to climb up and out.",
+      "marks": 4
+    },
+    {
+      "question": "What evidence from the text suggests that ants have a highly developed social sense and perhaps a system of government?",
+      "answer": "The text suggests that ants have a highly developed social sense and perhaps some system of government because they organize work, ensure each one does its share and no one is indolent, play games, nurse their sick, and bury their dead. The coordinated effort to form an 'ant-chain' to overcome a difficult obstacle also points to a sophisticated social structure and communication.",
+      "marks": 4
+    }
+  ],
+  "long_answer": [
+    {
+      "question": "Compare and contrast the characteristics and behaviors of 'driver ants' and 'umbrella ants' as described in the text.",
+      "answer": "Driver ants of Africa are described as the most ferocious kind of ants. They have no fixed home and are always on the move. They are completely blind but march in long lines, millions strong, devouring any animal in their path, including large ones like tigers, elephants, and pythons. Villagers flee their homes when driver ants enter, returning to find all insects and spiders cleared away.\n\nUmbrella ants of South America, on the other hand, are known for 'farming'. They are called by their name because they carry large pieces of leaf over their heads like umbrellas. They take these leaf pieces to their nests, chew them up, and make beds. On these beds, a kind of fungus grows, which serves as their food.\n\nIn comparison, both are types of ants exhibiting complex behaviors. However, they contrast significantly in their lifestyle and impact. Driver ants are nomadic predators, blind, and dangerous to animals and humans, causing fear and displacement. Umbrella ants are sedentary farmers, cultivating their food source, and are not described as dangerous.",
+      "marks": 6
+    }
+  ]
+}

@@ -3,7 +3,13 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-TEXTBOOK_FILE = (
+STD11_FILE = (
+    PROJECT_ROOT
+    / "data"
+    / "std11_chunks_small.json"
+)
+
+STD12_FILE = (
     PROJECT_ROOT
     / "data"
     / "chunks_small.json"
@@ -27,35 +33,52 @@ OUTPUT_FILE = (
     / "all_chunks.json"
 )
 
-# --------------------------
+# ==================================================
 # LOAD
-# --------------------------
+# ==================================================
 
-with open(TEXTBOOK_FILE, "r", encoding="utf-8") as f:
-    textbook = json.load(f)
+with open(STD11_FILE, "r", encoding="utf-8") as f:
+    std11 = json.load(f)
+
+with open(STD12_FILE, "r", encoding="utf-8") as f:
+    std12 = json.load(f)
 
 with open(PEDAGOGY_1_FILE, "r", encoding="utf-8") as f:
     pedagogy_1 = json.load(f)
 
 with open(PEDAGOGY_2_FILE, "r", encoding="utf-8") as f:
     pedagogy_2 = json.load(f)
-# --------------------------
-# SOURCE TAG
-# --------------------------
 
-for row in textbook:
+# ==================================================
+# SOURCE TAGS
+# ==================================================
 
-    row["source"] = "textbook"
+for row in std11:
+    row["source"] = "std11_textbook"
+
+for row in std12:
+    row["source"] = "std12_textbook"
+
+for row in pedagogy_1:
+    row["source"] = "pedagogy_1"
+
+for row in pedagogy_2:
+    row["source"] = "pedagogy_2"
+
+# ==================================================
+# COMBINE
+# ==================================================
 
 combined = (
-    textbook
+    std11
+    + std12
     + pedagogy_1
     + pedagogy_2
 )
 
-# --------------------------
+# ==================================================
 # SAVE
-# --------------------------
+# ==================================================
 
 with open(
     OUTPUT_FILE,
@@ -70,29 +93,42 @@ with open(
         ensure_ascii=False
     )
 
-print()
-print(f"Textbook chunks   : {len(textbook)}")
-print(f"Pedagogy 1 chunks : {len(pedagogy_1)}")
-print(f"Pedagogy 2 chunks : {len(pedagogy_2)}")
-print(f"Combined chunks   : {len(combined)}")
+# ==================================================
+# STATS
+# ==================================================
 
 print()
-print("=" * 60)
-print("METADATA CHECK")
-print("=" * 60)
+print("=" * 70)
+print("SOURCE COUNTS")
+print("=" * 70)
+
+print(f"Std 11 Textbook : {len(std11)}")
+print(f"Std 12 Textbook : {len(std12)}")
+print(f"Pedagogy 1      : {len(pedagogy_1)}")
+print(f"Pedagogy 2      : {len(pedagogy_2)}")
+
+print("-" * 70)
+
+print(f"TOTAL CHUNKS    : {len(combined)}")
+
+print("=" * 70)
 
 print()
-
-print("TEXTBOOK")
-print(textbook[0].keys())
+print("SAMPLE KEYS")
+print("=" * 70)
 
 print()
+print("STD11")
+print(std11[0].keys())
 
+print()
+print("STD12")
+print(std12[0].keys())
+
+print()
 print("PEDAGOGY 1")
 print(pedagogy_1[0].keys())
 
 print()
-
 print("PEDAGOGY 2")
 print(pedagogy_2[0].keys())
-

@@ -4,10 +4,6 @@ import sys
 from dotenv import load_dotenv
 
 from langchain_chroma import Chroma
-
-from langchain_google_genai import (
-    GoogleGenerativeAIEmbeddings
-)
 from langchain_openai import OpenAIEmbeddings
 
 # ==================================================
@@ -47,15 +43,23 @@ vectorstore = Chroma(
 # RETRIEVER
 # ==================================================
 
-def get_retriever():
+def get_retriever(
+    source: str | None = None
+):
+
+    search_kwargs = {
+        "k": 8,
+        "fetch_k": 30,
+        "lambda_mult": 0.7
+    }
+
+    if source:
+
+        search_kwargs["filter"] = {
+            "source": source
+        }
 
     return vectorstore.as_retriever(
-
         search_type="mmr",
-
-        search_kwargs={
-            "k": 8,
-            "fetch_k": 30,
-            "lambda_mult": 0.7
-        }
+        search_kwargs=search_kwargs
     )

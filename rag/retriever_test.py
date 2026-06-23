@@ -36,17 +36,20 @@ for i, doc in enumerate(docs, start=1):
         "unknown"
     )
 
-    
-
     print()
     print(f"RESULT {i}")
     print("-" * 60)
 
-    print(
-        f"Source : {source}"
-    )
+    print(f"Source : {source}")
 
-    if source == "textbook":
+    # =====================================
+    # STD 11 / STD 12
+    # =====================================
+
+    if source in [
+        "std11_textbook",
+        "std12_textbook"
+    ]:
 
         print(
             f"Unit   : {metadata.get('unit')}"
@@ -60,7 +63,11 @@ for i, doc in enumerate(docs, start=1):
             f"Section: {metadata.get('section')}"
         )
 
-    else:
+    # =====================================
+    # PEDAGOGY 1
+    # =====================================
+
+    elif source == "pedagogy_1":
 
         print(
             f"Unit   : {metadata.get('unit')}"
@@ -74,10 +81,24 @@ for i, doc in enumerate(docs, start=1):
             f"Topic# : {metadata.get('topic_number')}"
         )
 
+    # =====================================
+    # PEDAGOGY 2
+    # =====================================
+
+    elif source == "pedagogy_2":
+
+        print(
+            f"Block  : {metadata.get('block')}"
+        )
+
+        print(
+            f"Unit   : {metadata.get('unit')}"
+        )
+
+        print(
+            f"Title  : {metadata.get('title')}"
+        )
+
     print()
-
-    print(
-        doc.page_content[:500]
-    )
-
+    print(doc.page_content[:500])
     print()

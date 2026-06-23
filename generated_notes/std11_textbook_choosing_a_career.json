@@ -1,0 +1,186 @@
+{
+  "topic": "choosing a career",
+  "source": "std11_textbook",
+  "author": "",
+  "theme": "Career Decision Making",
+  "definition": "",
+  "characteristics": [],
+  "principles": [],
+  "merits": [],
+  "demerits": [],
+  "summary": "Choosing a career is a pivotal decision that significantly influences various aspects of an individual's life, including lifestyle, family interactions, and health. The process of selecting a career can be daunting, but with self-reflection and information, individuals can clarify their career aspirations. The text outlines ten essential questions that one should consider to gain insight into personal interests, values, personality traits, skills, and lifestyle preferences. These questions include: identifying personal interests, understanding core values, assessing personality aspects, evaluating skills, determining the need for control over time, recognizing educational requirements, analyzing job availability, considering preferred living locations, understanding salary needs, and exploring opportunities for advancement. Each question is designed to help individuals align their career choices with their personal attributes and life goals. The text emphasizes that no single question should dictate the career choice; rather, a holistic view of one's lifestyle and aspirations should guide the decision-making process. Ultimately, the goal is to find work that one enjoys and that aligns with their values and skills, leading to a fulfilling career.",
+  "important_points": [
+    "Choosing a career is a significant life decision.",
+    "Career choices impact lifestyle, family, and health.",
+    "Self-reflection is crucial for career clarity.",
+    "Ten essential questions help in understanding personal career preferences.",
+    "Interests play a vital role in job satisfaction.",
+    "Values can be more important than interests for career satisfaction.",
+    "Personality traits influence career suitability.",
+    "Skills inventory includes both hard and soft skills.",
+    "Understanding salary needs is essential for career planning.",
+    "Opportunities for advancement should be considered in career choices."
+  ],
+  "important_words": [
+    {
+      "word": "consequences",
+      "meaning": "effects or results of an action."
+    },
+    {
+      "word": "exhausted",
+      "meaning": "very tired, having no energy left."
+    },
+    {
+      "word": "values",
+      "meaning": "principles or standards of behavior that are important to an individual."
+    },
+    {
+      "word": "inventory",
+      "meaning": "a list or collection of items, in this context, skills."
+    },
+    {
+      "word": "collaboration",
+      "meaning": "working together to achieve a common goal."
+    },
+    {
+      "word": "corporate",
+      "meaning": "related to large companies or businesses."
+    },
+    {
+      "word": "enthusiasm",
+      "meaning": "intense and eager enjoyment or interest."
+    },
+    {
+      "word": "advancement",
+      "meaning": "the process of promoting or moving forward in a career."
+    },
+    {
+      "word": "satisfaction",
+      "meaning": "a feeling of pleasure or fulfillment."
+    },
+    {
+      "word": "assumption",
+      "meaning": "something that is accepted as true without proof."
+    }
+  ],
+  "mcq": [
+    {
+      "question": "What is the first question to ask when choosing a career?",
+      "options": [
+        "What are my values?",
+        "What are my interests?",
+        "What skills do I have?",
+        "What is my salary need?"
+      ],
+      "answer": "What are my interests?"
+    },
+    {
+      "question": "Which factor is considered more important for career satisfaction?",
+      "options": [
+        "Interests",
+        "Values",
+        "Skills",
+        "Salary"
+      ],
+      "answer": "Values"
+    },
+    {
+      "question": "What type of skills includes teamwork and time management?",
+      "options": [
+        "Hard skills",
+        "Soft skills",
+        "Technical skills",
+        "Life skills"
+      ],
+      "answer": "Soft skills"
+    },
+    {
+      "question": "What should be considered regarding job availability?",
+      "options": [
+        "Salary expectations",
+        "Job market",
+        "Work hours",
+        "Education requirements"
+      ],
+      "answer": "Job market"
+    },
+    {
+      "question": "What is the overall goal of choosing a career?",
+      "options": [
+        "To earn a high salary",
+        "To find work you enjoy",
+        "To follow family tradition",
+        "To gain social status"
+      ],
+      "answer": "To find work you enjoy"
+    }
+  ],
+  "fill_blank": [
+    {
+      "question": "The process of selecting a career can be _________.",
+      "answer": "daunting"
+    },
+    {
+      "question": "Understanding ________ needs is essential for career planning.",
+      "answer": "salary"
+    },
+    {
+      "question": "No single question should dictate the ________ choice.",
+      "answer": "career"
+    },
+    {
+      "question": "Interests mean the people, information, activities, or things we enjoy the ________.",
+      "answer": "most"
+    },
+    {
+      "question": "The overall idea is to think about a ________ rather than an attractive job title.",
+      "answer": "lifestyle"
+    }
+  ],
+  "one_mark": [
+    {
+      "question": "What is the importance of values in career choice?",
+      "answer": "Values can be more important than interests for career satisfaction."
+    },
+    {
+      "question": "What does an inventory of skills include?",
+      "answer": "An inventory of skills includes both hard skills and soft skills."
+    },
+    {
+      "question": "Why is it important to know about the labor market?",
+      "answer": "To understand job availability for the careers being considered."
+    },
+    {
+      "question": "What is the first step in choosing a career?",
+      "answer": "Identifying personal interests."
+    },
+    {
+      "question": "What should one consider regarding work hours?",
+      "answer": "How long the working hours are and if there is overtime."
+    }
+  ],
+  "short_answer": [
+    {
+      "question": "Why is it important to choose the most appropriate career?",
+      "answer": "Choosing the most appropriate career is important because it affects overall life satisfaction, including lifestyle, health, and family interactions."
+    },
+    {
+      "question": "What are the three major kinds of values discussed in the lesson?",
+      "answer": "The three major kinds of values discussed are financial success, social justice, and personal fulfillment."
+    },
+    {
+      "question": "How do money and time affect your choice of career?",
+      "answer": "Money affects career choice by determining the level of financial security desired, while time affects it by influencing the flexibility and structure of work hours."
+    }
+  ],
+  "long_answer": [
+    {
+      "question": "Discuss the ten questions one should consider when choosing a career.",
+      "answer": "The ten questions to consider when choosing a career include: 1) What are my interests? 2) What are my values? 3) What are my personality aspects? 4) What skills do I have? 5) How much control do I need over my own time? 6) What education or training do I need? 7) Are the jobs available? 8) What locations do I prefer to live in? 9) What are my salary needs? 10) Are there opportunities for advancement? Each question helps individuals reflect on their personal attributes and align them with potential career paths."
+    },
+    {
+      "question": "Explain how one's career can determine one's future.",
+      "answer": "One's career can determine one's future by influencing financial stability, personal fulfillment, and social status. A fulfilling career can lead to a satisfying lifestyle, positive family interactions, and overall well-being. Conversely, a career that does not align with personal values or interests can lead to dissatisfaction and stress, affecting health and relationships."
+    }
+  ]
+}
